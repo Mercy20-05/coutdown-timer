@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veda Technology - Countdown Timer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts for modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="card-container">
+    <!-- Header / Branding -->
+    <header class="header">
+      <div class="brand">
+        
+        <div class="brand-text">
+          
+        </div>
+      </div>
+      <div class="status-badge" id="live-indicator">
+        <span class="pulse-dot"></span> Live
+      </div>
+    </header>
+
+    <!-- Main Title & Target Information -->
+    <div class="title-section">
+      <h1>Event Countdown</h1>
+      <p id="target-date-display">Counting down to target date...</p>
+    </div>
+
+    <!-- Active Timer Display Grid -->
+    <div class="timer-grid" id="timer-grid">
+      <!-- Days -->
+      <div class="time-card">
+        <div class="time-value" id="days">00</div>
+        <div class="time-label">DAYS</div>
+      </div>
+      <!-- Hours -->
+      <div class="time-card">
+        <div class="time-value" id="hours">00</div>
+        <div class="time-label">HOURS</div>
+      </div>
+      <!-- Minutes -->
+      <div class="time-card">
+        <div class="time-value" id="minutes">00</div>
+        <div class="time-label">MINUTES</div>
+      </div>
+      <!-- Seconds -->
+      <div class="time-card">
+        <div class="time-value" id="seconds">00</div>
+        <div class="time-label">SECONDS</div>
+      </div>
+    </div>
+
+    <!-- Completion Message Box (Hidden until timer reaches zero) -->
+    <div class="completion-box" id="completion-box">
+      <div class="check-icon">🎉</div>
+      <h2 id="completion-message">The Event Has Begun!</h2>
+      <p>Thank you for waiting. All systems are go!</p>
+    </div>
+
+    <!-- Optional Quick Test Controls -->
+    <div class="control-panel">
+      <button class="btn" id="btn-quick-test">⚡ Set 10s Demo</button>
+      <button class="btn" id="btn-future">📅 Target Next Year</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
